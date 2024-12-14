@@ -41,3 +41,5 @@ for i in range(len(prediction)):
 	ans += (abs(p-a)/a)/(len(prediction))
 ans = 1 - ans
 print("accuracy: ", ans)
+
+print(model.predict([[150000, 20]]))
