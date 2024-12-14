@@ -20,7 +20,7 @@ r_squared = model.score
 
 # Print out the linear equation and r squared value
 print("equation: bp*", coef, " + ", y_int)
-print("r squared: ", r_squared)
+print("r squared: ", r_squared(x, y))
 # Predict the the blood pressure of someone who is 43 years old.
 # Print out the prediction
 
@@ -40,3 +40,5 @@ y_vals =  coef * x_vals + y_int
 plt.plot(x_vals, y_vals, '-')
 
 plt.show()
+
+print(model.predict([[42]]))
