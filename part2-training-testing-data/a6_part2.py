@@ -25,7 +25,7 @@ model = LinearRegression().fit(x_train,y_train)
 # Each should be a float and rounded to two decimal places. 
 coef = model.coef_[0]
 y_int = model.intercept_
-r_squared = model.score(x, y)
+r_squared = model.score(x_train, y_train)
 
 # Print out the linear equation and r squared value:
 print("equation: bp*", coef, " + ", y_int)
